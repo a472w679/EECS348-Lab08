@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>EECS 348 Lab 07 - Practice 04</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/vnd.microsoft.icon">
+    <link href="./style/style.css" type="text/css" rel="stylesheet">    
+</head>
+
+<body class="b-color">
+    <div id="center-body">
+        <div class="verti">
+            <h1>EECS 348 Lab 07</h1>
+            <h2>Practice 1</h2>
+        </div>
+
+        <hr/>
+
+        <div id="content">
+
+            <div class="left verti">
+                <img 
+                    id="pfp"
+                    decoding="async"
+                    loading="lazy" 
+                    width="250"
+                >
+                <p>Email: <a href="mailto:a472w679@ku.edu">A472W679@ku.edu</a></p>
+                <p>Phone: <a>(913)-XXX-XXXX</a></p>
+            </div>
+
+            <div class="right">
+                <h3 class="txt-center" id="a"></h3>
+                <hr class="chunky">
+                <p>
+                    I am a sophmore majoring in computer sicnece at the University of
+                    Kansas School of Engineering. Additionally, I am member of the KU Honors Program.
+                </p><br>
+                <p>
+                    I have taken the following courses:
+                </p>
+                <ul>
+                    <li>EECS 348</li>
+                    <li>EECS 388</li>
+                    <li>EECS 210</li>
+                    <li>EECS 269</li>
+                    <li>EECS 169</li>
+                    <li>EECS 141</li>
+                    <li>etc. etc.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p>
+            I am currently employed as a software engineering intern for a startup 
+            company in Kansas City. Primarily, I am a JavaScript developer with a passion 
+            for functional programming, algorithmics, and optimization. More recently, my
+            interests have shifted twords high-performance low-level applications, namely, 
+            ML and graphics.
+        </p>
+
+        <br>
+
+        <p>
+            I don't have LinkedIn so here is a link to the university's website instead:
+            <a href="https://engr.ku.edu/">https://engr.ku.edu/</a>.
+        </p><br>
+
+        <p>
+            And here is a random video about the University of Kansas:
+        </p>
+        <div class="verti">
+            <iframe width="300" src="https://www.youtube.com/embed/tWCQvPH2u44" title="Our Chant Rises | The University of Kansas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        let a = document.getElementById("a"),
+            b = document.getElementById("pfp"),
+            x = String.fromCharCode(65, 110, 100, 114, 101, 119, 32, 87, 97, 114, 100),
+            y = x.replace(' ', '_')
+
+        a.innerText = x
+        b.src = `https://kuendowment.org/wp-content/uploads/2022/11/${y}-web400px.jpg`
+    </script>
+</body>
+
+</html>
